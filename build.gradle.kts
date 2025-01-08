@@ -31,7 +31,7 @@ val fatJar = task("fatJar", type = Jar::class) {
     duplicatesStrategy = DuplicatesStrategy.EXCLUDE
     manifest {
         attributes["Implementation-Version"] = version
-        attributes["Main-Class"] = "edu.sokolov.Runner"
+        attributes["Main-Class"] = "edu.itmo.Runner"
     }
     from(configurations.runtimeClasspath.get().map { if (it.isDirectory) it else zipTree(it) })
     with(tasks.jar.get() as CopySpec)
