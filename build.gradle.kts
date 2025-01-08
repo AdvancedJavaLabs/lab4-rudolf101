@@ -2,7 +2,7 @@ plugins {
     kotlin("jvm") version "2.0.21"
 }
 
-group = "edu.sokolov"
+group = "edu.itmo"
 version = "unspecified"
 
 repositories {
@@ -14,7 +14,7 @@ dependencies {
     implementation("org.apache.logging.log4j:log4j-bom:2.24.3")
     implementation("org.apache.logging.log4j:log4j-api:2.24.3")
     runtimeOnly("org.apache.logging.log4j:log4j-core:2.24.3")
-    runtimeOnly("org.apache.logging.log4j:log4j-1.2-api:2.24.3") // Совместимость с Log4j 1.x
+    runtimeOnly("org.apache.logging.log4j:log4j-1.2-api:2.24.3")
     testImplementation(kotlin("test"))
 }
 
